@@ -1,0 +1,40 @@
+{
+  "name": "selenium-incognito-tool",
+  "version": "1.0.0",
+  "description": "Automated browser testing tool that opens a URL in incognito mode using Chrome and Selenium WebDriver. Supports SEO metadata extraction, screenshots, and performance timing.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "config": {
+    "url": "https://example.com",
+    "times": 3,
+    "delay": 100,
+    "headless": true,
+    "mode": "qa",
+    "screenshot": {
+      "disabled": false,
+      "pattern": "run-{index}.png",
+      "condition": "every-2"
+    }
+  },
+  "keywords": [
+    "selenium",
+    "automation",
+    "chrome",
+    "incognito",
+    "seo",
+    "headless",
+    "webdriver",
+    "testing",
+    "qa"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "chromedriver": "^134.0.5",
+    "selenium-webdriver": "^4.30.0"
+  }
+}
