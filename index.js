@@ -5,9 +5,9 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
+import * as chromeLauncher from 'chrome-launcher';
 
 const require = createRequire(import.meta.url);
-const chromeLauncher = require('chrome-launcher');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
